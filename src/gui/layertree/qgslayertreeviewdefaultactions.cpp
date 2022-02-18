@@ -330,7 +330,7 @@ void QgsLayerTreeViewDefaultActions::zoomToGroup( QgsMapCanvas *canvas )
   QList<QgsMapLayer *> layers;
   const QStringList findLayerIds = groupNode->findLayerIds();
   for ( const QString &layerId : findLayerIds )
-    layers << QgsProject::instance()->mapLayer( layerId );
+    if (QgsProject::instance()->mapLayer( layerId )) layers << QgsProject::instance()->mapLayer( layerId );
 
   zoomToLayers( canvas, layers );
 }

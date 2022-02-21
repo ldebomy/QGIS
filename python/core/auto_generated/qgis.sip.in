@@ -199,6 +199,7 @@ The development version
       Rename,
       Delete,
       ItemRepresentsFile,
+      RefreshChildrenWhenItemIsRefreshed,
     };
     typedef QFlags<Qgis::BrowserItemCapability> BrowserItemCapabilities;
 
@@ -784,6 +785,27 @@ The development version
       {
       Wkt,
       Proj,
+    };
+
+    enum class FieldDomainSplitPolicy
+    {
+      DefaultValue,
+      Duplicate,
+      GeometryRatio,
+    };
+
+    enum class FieldDomainMergePolicy
+    {
+      DefaultValue,
+      Sum,
+      GeometryWeighted,
+    };
+
+    enum class FieldDomainType
+    {
+      Coded,
+      Range,
+      Glob,
     };
 
     static const double DEFAULT_SEARCH_RADIUS_MM;

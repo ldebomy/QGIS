@@ -275,6 +275,7 @@ set(QGIS_CORE_SRCS
   providers/ogr/qgsgeopackagerasterwritertask.cpp
   providers/ogr/qgsgeopackageprojectstorage.cpp
   providers/ogr/qgsogrdbconnection.cpp
+  providers/ogr/qgsogrproviderconnection.cpp
   providers/ogr/qgsogrtransaction.cpp
 
   scalebar/qgsdoubleboxscalebarrenderer.cpp
@@ -522,6 +523,7 @@ set(QGIS_CORE_SRCS
   browser/qgsdataitemproviderregistry.cpp
   browser/qgsdirectoryitem.cpp
   browser/qgsfavoritesitem.cpp
+  browser/qgsfielddomainsitem.cpp
   browser/qgsfieldsitem.cpp
   browser/qgsfilebaseddataitemprovider.cpp
   browser/qgslayeritem.cpp
@@ -805,6 +807,7 @@ set(QGIS_CORE_SRCS
   validity/qgsvaliditycheckcontext.cpp
   validity/qgsvaliditycheckregistry.cpp
 
+  vector/qgsfielddomain.cpp
   vector/qgsvectordataprovider.cpp
   vector/qgsvectordataprovidertemporalcapabilities.cpp
   vector/qgsvectorlayer.cpp
@@ -1206,6 +1209,7 @@ set(QGIS_CORE_HDRS
   browser/qgsdataitemproviderregistry.h
   browser/qgsdirectoryitem.h
   browser/qgsfavoritesitem.h
+  browser/qgsfielddomainsitem.h
   browser/qgsfieldsitem.h
   browser/qgsfilebaseddataitemprovider.h
   browser/qgslayeritem.h
@@ -1609,6 +1613,7 @@ set(QGIS_CORE_HDRS
   providers/ogr/qgsogrconnpool.h
   providers/ogr/qgsogrdbconnection.h
   providers/ogr/qgsogrprovider.h
+  providers/ogr/qgsogrproviderconnection.h
   providers/ogr/qgsogrprovidermetadata.h
   providers/ogr/qgsogrproviderutils.h
   providers/ogr/qgsogrtransaction.h
@@ -1738,6 +1743,7 @@ set(QGIS_CORE_HDRS
   validity/qgsvaliditycheckcontext.h
   validity/qgsvaliditycheckregistry.h
 
+  vector/qgsfielddomain.h
   vector/qgsvectordataprovider.h
   vector/qgsvectordataprovidertemporalcapabilities.h
   vector/qgsvectorlayer.h
